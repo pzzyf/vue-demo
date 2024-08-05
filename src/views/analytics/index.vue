@@ -4,11 +4,11 @@
 
 <template>
   <div>
-    <div>
-      vue template
-    </div>
-    <Footer />
+    analytics
   </div>
+  <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

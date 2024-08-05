@@ -1,11 +1,12 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-  <div flex justify-between>
-    <div>father route</div>
-    <router-view />
+  <div>
+    login
   </div>
+  <Footer />
 </template>
 
 <style scoped>

@@ -16,6 +16,10 @@ const routes: RouteRecordRaw[] = [
     path: '/analytics',
     component: () => import('@/views/analytics/index.vue'),
   },
+  {
+    path: '/a',
+    component: () => import('@/views/slots/a.vue'),
+  },
 ]
 
 const router = createRouter({

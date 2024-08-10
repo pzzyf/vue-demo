@@ -10,6 +10,7 @@ function setupAccessGuard(router: Router) {
 }
 
 function createRouterGuard(router: Router) {
+  console.log('import引入，顶层模块会执行')
   setupAccessGuard(router)
 }
 

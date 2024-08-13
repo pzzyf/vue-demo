@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-import { createRouterGuard } from './guard'
+// import { createRouterGuard } from './guard'
 
 const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/analytics',
+    redirect: '/prop',
   },
   {
     path: '/login',
@@ -20,6 +20,10 @@ const routes: RouteRecordRaw[] = [
     path: '/a',
     component: () => import('@/views/slots/a.vue'),
   },
+  {
+    path: '/prop',
+    component: () => import('@/views/propemit/f.vue'),
+  },
 ]
 
 const router = createRouter({
@@ -27,6 +31,6 @@ const router = createRouter({
   routes,
 })
 
-createRouterGuard(router)
+// createRouterGuard(router)
 
 export { router }

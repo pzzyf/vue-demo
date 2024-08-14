@@ -1,7 +1,9 @@
 import type { Router } from 'vue-router'
 
 function setupAccessGuard(router: Router) {
+  console.log('初始化')
   router.beforeEach(async (to) => {
+    console.log('路由守卫')
     const accessToken = localStorage.getItem('token')
     if (!accessToken && to.path !== '/login') {
       return { path: '/login' }

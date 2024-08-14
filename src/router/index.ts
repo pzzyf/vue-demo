@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-// import { createRouterGuard } from './guard'
+import { createRouterGuard } from './guard'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -31,6 +31,6 @@ const router = createRouter({
   routes,
 })
 
-// createRouterGuard(router)
+createRouterGuard(router)
 
 export { router }

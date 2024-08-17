@@ -9,8 +9,8 @@ const props = withDefaults(defineProps<{ name: string }>(), {
 </script>
 
 <template>
-  <div>
-    {{ props.name }}
+  <div v-if="props">
+    {{ name }}
   </div>
 </template>
 

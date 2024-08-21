@@ -22,8 +22,13 @@ const breadcrumbs = computed(() => {
 <template>
   <div flex justify-center>
     <div v-for="item, index in breadcrumbs" :key="index">
-      <div m-5>
-        {{ item.title }}
+      <div flex items-center>
+        <div m-1>
+          {{ item.title }}
+        </div>
+        <div v-if="index < breadcrumbs.length - 1">
+          /
+        </div>
       </div>
     </div>
   </div>

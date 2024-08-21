@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/withDefaults',
+    redirect: '/breadcrumbs/son',
   },
   {
     path: '/login',
@@ -31,6 +31,21 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/withDefaults',
     component: () => import('@/views/withDefaults/index.vue'),
+  },
+  {
+    path: '/breadcrumbs',
+    meta: {
+      title: '面包屑',
+    },
+    children: [
+      {
+        path: 'son',
+        component: () => import('@/views/breadcrumbs/index.vue'),
+        meta: {
+          title: '面包屑儿子',
+        },
+      },
+    ],
   },
 ]
 

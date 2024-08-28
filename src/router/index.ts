@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/grid',
+    redirect: '/watchEffect',
   },
   {
     path: '/login',
@@ -63,6 +63,14 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/grid',
     component: () => import('@/views/grid/index.vue'),
+  },
+  {
+    path: '/watch',
+    component: () => import('@/views/watch/index.vue'),
+  },
+  {
+    path: '/watchEffect',
+    component: () => import('@/views/watchEffect/index.vue'),
   },
 ]
 

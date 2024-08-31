@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/watchEffect',
+    redirect: '/animator',
   },
   {
     path: '/login',
@@ -71,6 +71,11 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/watchEffect',
     component: () => import('@/views/watchEffect/index.vue'),
+  },
+  // 新添加的路由
+  {
+    path: '/animator',
+    component: () => import('@/views/animator/index.vue'),
   },
 ]
 

@@ -3,7 +3,7 @@ import App from './App.vue'
 import { initStores } from './store'
 import { router } from '@/router'
 
-import '@unocss/reset/tailwind.css'
+import '@unocss/reset/normalize.css'
 import './styles/main.css'
 import 'uno.css'
 import './a'

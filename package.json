@@ -19,7 +19,7 @@
     "vue-router": "4"
   },
   "devDependencies": {
-    "@afe1/utils": "^1.0.0",
+    "@afe1/utils": "^1.0.7",
     "@antfu/eslint-config": "^2.22.2",
     "@iconify-json/carbon": "^1.1.36",
     "@types/node": "^20.14.10",

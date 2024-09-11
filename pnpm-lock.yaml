@@ -25,8 +25,8 @@ importers:
         version: 4.4.0(vue@3.4.31(typescript@5.5.3))
     devDependencies:
       '@afe1/utils':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.7
+        version: 1.0.7
       '@antfu/eslint-config':
         specifier: ^2.22.2
         version: 2.23.1(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.31)(eslint-plugin-format@0.1.2(eslint@9.7.0))(eslint@9.7.0)(typescript@5.5.3)
@@ -93,8 +93,8 @@ importers:
 
 packages:
 
-  '@afe1/utils@1.0.0':
-    resolution: {integrity: sha512-5I2Q1HGu1LN0YqNN7lWSQw0Iu4F81zGsvlpRrljtddVdJejknSwaAxtRkHeezkF7CZ0g7BeSlC0e7zhelUo6Vw==}
+  '@afe1/utils@1.0.7':
+    resolution: {integrity: sha512-Y4JTYgqzw9NMPiv5C+zLb41oufvHjolpD5GJTbPlPhz/AKaRyza4Gu7ZCvj2Icvk+HdGWlBqk8NVZ7EYuwHNOw==}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -2900,7 +2900,7 @@ packages:
 
 snapshots:
 
-  '@afe1/utils@1.0.0': {}
+  '@afe1/utils@1.0.7': {}
 
   '@ampproject/remapping@2.3.0':
     dependencies:

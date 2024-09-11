@@ -7,6 +7,7 @@ import UnoCSS from 'unocss/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -52,5 +53,11 @@ export default defineConfig({
       dts: true,
     }),
     UnoCSS(),
+    viteMockServe({
+      // default
+      mockPath: 'mock',
+      enable: true,
+    }),
+
   ],
 })

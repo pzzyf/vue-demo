@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/utils',
+    redirect: '/mock',
   },
   {
     path: '/login',

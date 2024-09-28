@@ -29,3 +29,8 @@ async function test1() {
   console.log('c :>> ', c)
   console.log('d :>> ', d)
 })()
+
+console.log('Promise.resolve() :>> ', Promise.resolve(arr))
+console.log('Promise.reject() :>> ', Promise.reject(arr))
+console.log('Promise.all() :>> ', Promise.all(arr))
+console.log('Promise.race() :>> ', Promise.race(arr))

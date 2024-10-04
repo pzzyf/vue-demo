@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { arr_unique } from '@afe1/utils'
 
-const is = arr_unique({ key: 1 })
+const is = arr_unique([1, 2, 3, 3, 4])
 </script>
 
 <template>
@@ -11,4 +11,5 @@ const is = arr_unique({ key: 1 })
   </div>
 </template>
 
+å
 <style scoped></style>

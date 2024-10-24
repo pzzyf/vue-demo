@@ -10,6 +10,10 @@ const demo3 = computed(() => [
     a: 'demo3',
   },
 ])
+
+console.log('demo1 :>> ', demo1.value)
+console.log('demo2 :>> ', demo2.value)
+console.log('demo3 :>> ', demo3.value)
 </script>
 
 <template>

@@ -4,7 +4,13 @@
 
 <template>
   <div>
-    test
+    <div v-color>
+      test
+    </div>
+
+    <div v-color="'red'">
+      test
+    </div>
   </div>
 </template>
 

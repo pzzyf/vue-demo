@@ -12,6 +12,13 @@ const app = createApp(App)
 
 app.component('Test', Test)
 
+app.directive('color', {
+  mounted(el, binding) {
+    const color = binding.value || 'yellow'
+    el.style.color = color
+  },
+})
+
 initStores(app)
 
 app.use(router)

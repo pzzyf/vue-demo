@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/toPathTree',
+    redirect: '/flex',
   },
   {
     path: '/login',

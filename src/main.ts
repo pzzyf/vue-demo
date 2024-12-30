@@ -19,6 +19,8 @@ app.directive('color', {
   },
 })
 
+app.provide('hello', 'world')
+
 initStores(app)
 
 app.use(router)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+const hello = inject('hello')
 </script>
 
 <template>
@@ -11,6 +11,8 @@
     <div v-color="'red'">
       test
     </div>
+
+    <div>{{ hello }}</div>
   </div>
 </template>
 

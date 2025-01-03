@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/flex',
+    redirect: '/toRaw',
   },
   {
     path: '/login',
@@ -108,6 +108,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/toPathTree',
     component: () => import('@/views/toPathTree/index.vue'),
+  },
+  {
+    path: '/toRaw',
+    component: () => import('@/views/toRaw/index.vue'),
   },
 ]
 

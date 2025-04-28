@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/exportDynamic',
+    redirect: '/interval',
   },
   {
     path: '/login',
@@ -122,12 +122,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/promise/index.vue'),
   },
   {
-    path: '/dynamic',
-    component: () => import('@/views/dynamic/index.vue'),
-  },
-  {
     path: '/exportDynamic',
     component: () => import('@/views/exportDynamic/index.vue'),
+  },
+  {
+    path: '/interval',
+    component: () => import('@/views/interval/index.vue'),
   },
 ]
 

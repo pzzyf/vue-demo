@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/interval',
+    redirect: '/css',
   },
   {
     path: '/login',
@@ -128,6 +128,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/interval',
     component: () => import('@/views/interval/index.vue'),
+  },
+  {
+    path: '/css',
+    component: () => import('@/views/css/index.vue'),
   },
 ]
 

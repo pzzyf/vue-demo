@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/transparent',
+    redirect: '/hover',
   },
   {
     path: '/login',
@@ -136,6 +136,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/transparent',
     component: () => import('@/views/transparent/index.vue'),
+  },
+  {
+    path: '/hover',
+    component: () => import('@/views/hover/index.vue'),
   },
 ]
 

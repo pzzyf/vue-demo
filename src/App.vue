@@ -1,6 +1,5 @@
 <template>
-  <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+  <main class="h-[100vh] w-[100vw] text-gray-700 font-sans dark:text-gray-200">
     <RouterView />
-    <Footer />
   </main>
 </template>

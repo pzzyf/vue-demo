@@ -1,32 +1,30 @@
 <script setup>
-const isExtended = ref(false)
+const extend = ref(false)
 
-const fanz = () => isExtended.value = !isExtended.value
+const change = () => extend.value = !extend.value
 </script>
 
 <template>
-  <div class="1">
-    <div @click="fanz">
-      {{ isExtended ? '收起' : '展开' }}
+  <div class="bg" :class="{ clk: extend }">
+    <div @click="change">
+      {{ extend ? '收起' : '展开' }}
     </div>
-
-    <div class="size-full">
-      <div class="bg" :class="{ Extend: isExtended }">
-        123
-      </div>
-    </div>
+    <div>2</div>
   </div>
 </template>
 
 <style scoped>
 .bg {
-  width: 1920px;
-  height: 500px;
-  background: url('@/assets/1.png');
+  position: fixed;
+  bottom: 100px;
   transition: all 0.3s ease-in-out;
+  background-image: url('@/assets/1.png');
+  width: 1920px;
+  height: 50px;
 }
 
-.Extend {
-  height: 666px;
+.clk {
+  bottom: 300px;
+  height: 150px;
 }
 </style>

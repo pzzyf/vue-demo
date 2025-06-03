@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: 'Root',
     path: '/',
-    redirect: '/animation',
+    redirect: '/box',
   },
   {
     path: '/login',
@@ -148,6 +148,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/animation',
     component: () => import('@/views/animation/index.vue'),
+  },
+  {
+    path: '/box',
+    component: () => import('@/views/box/index.vue'),
   },
 ]
 
